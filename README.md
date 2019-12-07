@@ -23,7 +23,7 @@ alt="VINS" width="320" height="240" border="10" /></a>
 alt="VINS" width="320" height="240" border="10" /></a>
 
 ## Acknowledgements:
-This euler-based state dependent LQR controller is an extension of [1] for euler angles instead of quaternions.
+This state dependent LQR controller is an extension of [1] for euler angles instead of quaternions.
 
 ## References:
 [1] Foehn, Philipp & Scaramuzza, Davide. (2018). Onboard State Dependent LQR for Agile Quadrotors. 10.1109/ICRA.2018.8460885. 
