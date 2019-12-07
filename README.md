@@ -1,5 +1,15 @@
 # Introduction
-This ROS package implements a state dependent LQR controller for high accuracy trajectory tracking.
+This ROS package implements a state dependent LQR controller for high accuracy trajectory tracking. It was tested with PX4_SITL and Gazebo before being flown in an agile racing quad with a Raspberry Pi 3B companion computer.  
+
+# Commands
+Runs PX4, VRPN (VICON mocap), and relay pose data.
+```
+roslaunch lqr_controller mavros_vrpn.launch
+```
+Runs main controller and loads param.yaml file.
+```
+roslaunch lqr_controller lqr_euler.launch
+```
 
 # Future Plans
 Working on developing a learning algorithm for inflight thrust mapping. Strain gauges are attached to a quadrotor to collect thrust measurements in flight and how the mapping of normalized motor input [0,1] to thrust changes as a result of voltage decrement, ground effects, and propeller downwash. 
